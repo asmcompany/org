@@ -38,7 +38,7 @@ def home_page(request):
         'most_visit': my_grouper(4, most_visit_products),
         'latest_products': my_grouper(4, latest_products)
     }
-    return render(request, 'home_page.html', context)
+    return render(request, 'index.html', context)
 
 
 def about_page(request):
