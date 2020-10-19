@@ -19,6 +19,9 @@ from django.urls import path, include
 from emarket import settings
 from .views import home_page, header, footer, about_page
 
+from django.views.static import serve
+from django.conf.urls import url
+
 urlpatterns = [
     path('', home_page),
     path('', include('emarket_account.urls')),
@@ -28,7 +31,9 @@ urlpatterns = [
     path('about-us', about_page),
     path('header', header, name="header"),
     path('footer', footer, name="footer"),
-    path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
 ]
 
 
