@@ -1,18 +1,14 @@
 import itertools
-
 from django.shortcuts import render, redirect
-
 from emarket_products.models import Product
 from emarket_sliders.models import Slider
 from emarket_settings.models import SiteSetting
-
 
 # header code behind
 def header(request, *args, **kwargs):
     site_setting = SiteSetting.objects.first()
     context = {'setting': site_setting}
     return render(request, 'shared/Header.html', context)
-
 
 # footer code behind
 def footer(request, *args, **kwargs):
