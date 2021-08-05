@@ -24,7 +24,7 @@ SECRET_KEY = 'oy45*xt6*ly0m04i(ne8kb^09dd(_v9tv5m)zpqg^maoc+i9a#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'asmmarket.herokuapp.com']
+ALLOWED_HOSTS = ['asmcom.pythonanywhere.com']
 
 # Application definition
 
