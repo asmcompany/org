@@ -10,6 +10,7 @@
                         <ol class="carousel-indicators">
                             <li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
                             <li data-target="#slider-carousel" data-slide-to="1"></li>
+                            <li data-target="#slider-carousel" data-slide-to="2"></li>
                         </ol>
 
                         <div class="carousel-inner">
@@ -20,7 +21,7 @@
                                     <div class="col-sm-6">
                                         <h2>{{ slider.title }}</h2>
                                         <p>{{ slider.description }}</p>
-                                        <a href="{{ slider.link }}" class="btn btn-default get">توضیحات بیشتر</a>
+                                        <a href="/products/laptop" class="btn btn-default get">محصولات بیشتر</a>
                                     </div>
                                     <div class="col-sm-6">
                                         <img src="{{ slider.image.url }}" class="girl img-responsive"
@@ -34,12 +35,7 @@
 
                         </div>
 
-                        <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                        <a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
+                        
                     </div>
 
                 </div>
@@ -66,8 +62,8 @@
                                                         <img src="{{ product.image.url }}" alt=""/>
                                                         <h2>{{ product.price }}تومان</h2>
                                                         <p>{{ product.title }}</p>
-                                                        <a href="#" class="btn btn-default add-to-cart"><i
-                                                                class="fa fa-shopping-cart"></i>افزودن به سبـد خرید</a>
+                                                        <a href="{{ product.get_absolute_url }}" class="btn btn-default add-to-cart"><i
+                                                                class="fa fa-shopping-cart"></i>مشاهده محصول</a>
                                                     </div>
 
                                                 </div>
@@ -79,12 +75,7 @@
 
 
                         </div>
-                        <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                        <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
+                        
                     </div>
                 </div><!--/NewProduct_items-->
 
@@ -103,8 +94,8 @@
                                                         <img src="{{ product.image.url }}" alt=""/>
                                                         <h2>{{ product.price }}تومان</h2>
                                                         <p>{{ product.title }}</p>
-                                                        <a href="#" class="btn btn-default add-to-cart"><i
-                                                                class="fa fa-shopping-cart"></i>افزودن به سبـد خرید</a>
+                                                        <a href="{{ product.get_absolute_url }}" class="btn btn-default add-to-cart"><i
+                                                                class="fa fa-shopping-cart"></i>مشاهده محصول</a>
                                                     </div>
 
                                                 </div>
@@ -116,12 +107,7 @@
 
 
                         </div>
-                        <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                        <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
+                       
                     </div>
                 </div><!--/NewProduct_items-->
 
